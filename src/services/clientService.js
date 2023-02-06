@@ -1,5 +1,8 @@
 import doCPFsMatch from '../utils/validateCPF.js';
-import { createClient } from '../repositories/clientRepository.js';
+import {
+  createClient,
+  getClientByCpf,
+} from '../repositories/clientRepository.js';
 
 export async function createClientService(cpf, name, birthdate) {
   if (cpf == null || name == null || birthdate == null) {
@@ -15,4 +18,13 @@ export async function createClientService(cpf, name, birthdate) {
     };
   }
   return await createClient(cpf, name, birthdate);
+}
+
+export async function getClientService(cpf) {
+  const clientData = await getClientByCpf(cpf);
+  if (clientData.length === 0) {
+    throw { type: 'notFound', message: 'Não existe um cliente com esse CPF!' };
+  }
+  console.log(clientData);
+  return clientData;
 }

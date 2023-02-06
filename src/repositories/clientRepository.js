@@ -9,3 +9,11 @@ export async function createClient(cpf, name, birthdate) {
     },
   });
 }
+
+export async function getClientByCpf(cpf) {
+  return await client.client.findMany({
+    where: {
+      cpf,
+    },
+  });
+}
