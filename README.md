@@ -105,3 +105,31 @@ Para a rota /clients/1 com o número padrão de resultados, espera-se uma respos
 ```
 
 #
+
+## Para utilizar a API localmente, basta ter o Docker instalado e seguir esses passos:
+
+### 1. Clone o repositório em uma pasta localmente abrindo o terminal e digitando:
+
+```
+git clone https://github.com/HidekiGus/teste-tecnico-igma.git
+```
+
+### 2. Na pasta que contém o repositório crie um arquivo .env para as variáveis de ambiente necessárias. No arquivo .env.example você encontra o modelo para a criação do .env, mas aqui vai um exemplo:
+
+```
+PORT=
+DATABASE_URL=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+```
+
+### 3. Com o .env criado e as variáveis adicionadas, agora abra o terminal na mesma pasta e digite:
+
+```
+docker compose up --build
+```
+
+### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` .
+
+### 🎉 Pronto!
