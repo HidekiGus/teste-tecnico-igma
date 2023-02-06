@@ -117,7 +117,7 @@ git clone https://github.com/HidekiGus/teste-tecnico-igma.git
 ### 2. Na pasta que contém o repositório crie um arquivo .env para as variáveis de ambiente necessárias. No arquivo .env.example você encontra o modelo para a criação do .env, mas aqui vai um exemplo:
 
 ```
-PORT=
+PORT=   // quando vazia, a aplicação automaticamente define a porta para 4000
 DATABASE_URL=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
@@ -130,6 +130,6 @@ POSTGRES_DB=
 docker compose up --build
 ```
 
-### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` .
+### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` ou `http://localhost:PORT`com PORT sendo a variável de ambiente definida no arquivo .env .
 
 ### 🎉 Pronto!
