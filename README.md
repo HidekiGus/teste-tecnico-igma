@@ -130,6 +130,6 @@ POSTGRES_DB=
 docker compose up --build
 ```
 
-### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` ou `http://localhost:PORT`com PORT sendo a variável de ambiente definida no arquivo .env .
+### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` ou `http://localhost:PORT` com PORT sendo a variável de ambiente definida no arquivo .env .
 
 ### 🎉 Pronto!
