@@ -174,4 +174,4 @@ docker compose up --build
 
 ### 🎉 Prontinho, agora a API está configurada e testada, funcionando corretamente!
 
-## Curiosidade: [![wakatime](https://wakatime.com/badge/user/0e755f10-7f5f-49f6-8a24-87ba279bf946/project/2e20325c-c703-4430-bf8d-72b8673f53fb.svg)](https://wakatime.com/badge/user/0e755f10-7f5f-49f6-8a24-87ba279bf946/project/2e20325c-c703-4430-bf8d-72b8673f53fb)
+## Curiosidade: Aqui tem o tempo que eu levei pra codar essa API. [![wakatime](https://wakatime.com/badge/user/0e755f10-7f5f-49f6-8a24-87ba279bf946/project/2e20325c-c703-4430-bf8d-72b8673f53fb.svg)](https://wakatime.com/badge/user/0e755f10-7f5f-49f6-8a24-87ba279bf946/project/2e20325c-c703-4430-bf8d-72b8673f53fb)
