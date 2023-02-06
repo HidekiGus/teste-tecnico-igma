@@ -133,3 +133,45 @@ docker compose up --build
 ### 4. Após a construção da imagem e do container estar rodando, você deve poder acessar a API localmente pela URL `http://localhost:4000` ou `http://localhost:PORT` com PORT sendo a variável de ambiente definida no arquivo .env .
 
 ### 🎉 Pronto!
+
+#
+
+## Testando a API
+
+### Para testar as rotas da aplicação e ver se está tudo funcionando corretamente, utilize o arquivo `thunder-collection_Testes API.json` no Thunder Client. Para utilizar o arquivo, entre na interface do Thunder Client, como na foto abaixo, e clique em Collections.
+
+![image](https://user-images.githubusercontent.com/40206355/217053580-5f419fab-dae9-4f5f-b65a-c83395e6901a.png)
+
+### Agora, no canto inferior direito da foto mostra um ícone. Clique nele.
+
+![image](https://user-images.githubusercontent.com/40206355/217053806-e9f736aa-5650-45e5-b494-5c419fe0f11c.png)
+
+### Selecione Import.
+
+![image](https://user-images.githubusercontent.com/40206355/217053886-ce9f0181-030f-4ed7-a42e-46b8e989be17.png)
+
+### Agora escolha o arquivo `thunder-collection_Testes API.json`.
+
+### Se tudo der certo, uma nova aba aparecerá escrito `Testes API`
+
+![image](https://user-images.githubusercontent.com/40206355/217054105-9ec9ea6d-6765-4c46-aeec-fbd035431752.png)
+
+### Passando o mouse sobre essa aba, aparecem 3 pontinhos na direita. Clique neles.
+
+![image](https://user-images.githubusercontent.com/40206355/217054239-f9bc6b5a-c108-440e-892b-1bca83ed09f0.png)
+
+### Agora clique em `Run all`.
+
+![image](https://user-images.githubusercontent.com/40206355/217054316-1d29d826-59c3-4cf0-b586-f8c482ff0111.png)
+
+### Na nova tela que apareceu, clique em `Run` no canto superior direito.
+
+![image](https://user-images.githubusercontent.com/40206355/217054464-8a4ae5f6-ddc4-4771-ad13-4cae24a91690.png)
+
+### Caso tudo ocorra como esperado, você deve ver uma tela igual a esta:
+
+![image](https://user-images.githubusercontent.com/40206355/217054559-ebd7a1fa-6142-49d3-bb88-8b542b274def.png)
+
+### 🎉 Prontinho, agora a API está configurada e testada, funcionando corretamente!
+
+
