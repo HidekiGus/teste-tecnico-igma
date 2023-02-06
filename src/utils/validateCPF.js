@@ -51,13 +51,10 @@ function resolveCpfDigits(cpf) {
 
 // With the CPF given by the user and the CPF calculated by the algorithm above,
 // compares them and checks if they match. If they don't, it should throw the 422 response.
-function compareCpf(cpfGivenByUser, cpfCalculated) {
+export default function doCPFsMatch(cpfGivenByUser) {
   const cpfOnlyNumbersFromUser = cpfGivenByUser
     .replaceAll('.', '')
     .replace('-', '');
-  if (cpfOnlyNumbersFromUser !== cpfCalculated) {
-    console.log('CPF invalid');
-  } else {
-    console.log('true');
-  }
+  const cpfCalculated = resolveCpfDigits(cpfGivenByUser);
+  return cpfOnlyNumbersFromUser === cpfCalculated;
 }
