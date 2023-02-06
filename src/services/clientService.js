@@ -2,6 +2,7 @@ import doCPFsMatch from '../utils/validateCPF.js';
 import {
   createClient,
   getClientByCpf,
+  getClients,
 } from '../repositories/clientRepository.js';
 
 export async function createClientService(cpf, name, birthdate) {
@@ -25,6 +26,13 @@ export async function getClientService(cpf) {
   if (clientData.length === 0) {
     throw { type: 'notFound', message: 'Não existe um cliente com esse CPF!' };
   }
-  console.log(clientData);
   return clientData;
+}
+
+export async function getClientsService(page) {
+  const pageNumber = parseInt(page);
+  const clientsToTake = 4;
+  const clientsToSkip = clientsToTake * (pageNumber - 1);
+  const clientsData = await getClients(clientsToTake, clientsToSkip);
+  return clientsData;
 }
