@@ -17,3 +17,13 @@ export async function getClientByCpf(cpf) {
     },
   });
 }
+
+export async function getClients(clientsToTake, clientsToSkip) {
+  return await client.client.findMany({
+    skip: clientsToSkip,
+    take: clientsToTake,
+    orderBy: {
+      id: 'desc',
+    },
+  });
+}
