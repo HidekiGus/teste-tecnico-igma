@@ -23,9 +23,14 @@ export async function createClientService(cpf, name, birthdate) {
 
 export async function getClientService(cpf) {
   const clientData = await getClientByCpf(cpf);
+
   if (clientData.length === 0) {
-    throw { type: 'notFound', message: 'Não existe um cliente com esse CPF!' };
+    throw {
+      type: 'notFound',
+      message: 'Não existe um cliente com esse CPF!',
+    };
   }
+
   return clientData;
 }
 
